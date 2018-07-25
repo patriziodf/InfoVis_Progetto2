@@ -1,0 +1,16 @@
+f=open("dag.csv",'r')
+reader=csv.reader(f)
+lettura=[]
+for row in reader:
+    lettura.append(row)
+lettura.pop(len(lettura)-1)
+lista2=[]
+for i in lettura:
+    lista2.append(i[0])
+    lista2.append(i[1])
+nodi=list(set(lista2))
+dag={}
+for i in nodi:
+    dag[i]=[]
+for i in lettura:
+    dag[i[0]].append(i[1])

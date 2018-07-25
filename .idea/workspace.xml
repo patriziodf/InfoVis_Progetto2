@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa1b5ea0-88a9-42c1-bfc2-57c43b21d377" name="Default" comment="" />
+    <list default="true" id="fa1b5ea0-88a9-42c1-bfc2-57c43b21d377" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Python/app.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/dag.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/d3.js" beforeDir="false" afterPath="$PROJECT_DIR$/D3/d3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/D3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/info2.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -24,7 +31,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="654" />
     <option name="y" value="111" />
     <option name="width" value="519" />
@@ -66,15 +73,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532533404128</updated>
-      <workItem from="1532533409452" duration="309000" />
+      <workItem from="1532533409452" duration="601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309000" />
+    <option name="totallyTimeSpent" value="601000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />

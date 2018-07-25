@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MaleMale</title>
+    <script src="./d3.js"></script>
+</head>
+<body>
+<h1>Premi il pulsante rosso per iniziare</h1>
+<script>
+
+
+    var x=20
+    var y=50
+    var r=20
+    var dist=200
+    var datati=[100,110,120]
+
+    // dimensioni della base
+    var pelato= d3.select("body")
+        .append("svg")
+        .attr("width",2000)
+        .attr("height",800);
+
+    //faccio cerchio
+    var circl=pelato.append("circle")
+        .attr("cx",x)
+        .attr("cy",y)
+        .attr("r",20)
+        .attr("fill","#fff")
+        .attr("stroke","#000");
+
+    var circl2=pelato.append("circle")
+        .attr("cx",x)
+        .attr("cy",y+dist)
+        .attr("r",20)
+        .attr("fill","#fff")
+        .attr("stroke","#000");
+    var circl3=pelato.append("circle")
+        .attr("cx",x+dist)
+        .attr("cy",y+dist)
+        .attr("r",20)
+        .attr("fill","#fff")
+        .attr("stroke","#000");
+    var circl4=pelato.append("circle")
+        .attr("cx",x+dist)
+        .attr("cy",y)
+        .attr("r",20)
+        .attr("fill","#fff")
+        .attr("stroke","#000");
+    var line1=pelato.append("line")
+        .attr("x1",x+r)
+        .attr("y1",y)
+        .attr("x2",x+dist)
+        .attr("y2",y+dist-r)
+        .attr("stroke","#0f0")
+        .attr("stroke-width",3)
+    var line2=pelato.append("line")
+        .attr("x1",x+r)
+        .attr("y1",y+dist)
+        .attr("x2",x+dist-r)
+        .attr("y2",y)
+        .attr("stroke","#0f0")
+        .attr("stroke-width",3)
+    var line3=pelato.append("line")
+        .attr("x1",x)
+        .attr("y1",y+r)
+        .attr("x2",x)
+        .attr("y2",y+dist-r)
+        .attr("stroke","#0f0")
+        .attr("stroke-width",3)
+    var line4=pelato.append("line")
+        .attr("x1",x+r)
+        .attr("y1",y+dist)
+        .attr("x2",x+dist-r)
+        .attr("y2",y+dist)
+        .attr("stroke","#0f0")
+        .attr("stroke-width",3);
+
+    var a=3500;
+    //circl3.transition().attr("cy","500").duration(a)
+    circl2.on("click", function() {
+        circl2.transition().attr("cy","500").duration(a);
+
+    })
+
+
+    var circl5=pelato.append("circle").text("press")
+        .attr("cx",x+r*2)
+        .attr("cy",y+dist+dist)
+        .attr("r",50)
+        .attr("fill","#f00")
+        .attr("stroke","#000");
+    var dd=100
+    var hin=1000
+    var vin=450
+    var n=0
+    circl5.on("click", function() {
+        if(n<3){
+            pelato.append("circle")
+                .attr("cx",hin+dd*n)
+                .attr("cy",vin)
+                .attr("r",20)
+                .attr("fill","#0f0")
+                .attr("stroke","#000");
+            n=n+1}
+        if (n===3){
+            n=0;
+            vin=vin-dd;
+        }
+
+    })
+</script>
+</body>
+</html>
